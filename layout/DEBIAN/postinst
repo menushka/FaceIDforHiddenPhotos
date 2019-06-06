@@ -1,0 +1,9 @@
+#!/bin/sh
+PHOTOS_PLIST_PATH="/Applications/MobileSlideShow.app/Info.plist"
+TEMP_PLIST_ID="ca.menushka.mobileslideshow.temp"
+TEMP_PLIST_PATH="/var/mobile/Library/Preferences/$TEMP_PLIST_ID.plist"
+
+cp $PHOTOS_PLIST_PATH $TEMP_PLIST_PATH
+su mobile -c "defaults write $TEMP_PLIST_ID NSFaceIDUsageDescription 'Used by FaceSecureHiddenPhotos'"
+cp $TEMP_PLIST_PATH $PHOTOS_PLIST_PATH
+rm $TEMP_PLIST_PATH

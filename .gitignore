@@ -1,0 +1,21 @@
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### THEOS-Tweak ###
+._*
+*.deb
+.debmake
+_
+obj
+.theos
+.DS_Store
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+dev
