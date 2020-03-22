@@ -1,7 +1,7 @@
 Package: ca.menushka.faceidforhiddenphotos
 Name: FaceID For Hidden Photos
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Adds FaceID authentication to access hidden folder in Photos.
 Maintainer: Menushka Weeratunga
